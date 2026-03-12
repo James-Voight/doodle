@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <title>Jump Blocks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="phone-shell" aria-label="Game area">
+      <canvas id="game" width="360" height="640" aria-label="Jump game"></canvas>
+
+      <div class="hud">
+        <p class="score-label">Score</p>
+        <p id="score" class="score">0</p>
+      </div>
+
+      <div id="overlay" class="overlay visible" role="dialog" aria-live="polite">
+        <h1>Jump Blocks</h1>
+        <p>Tap left or right side to move.</p>
+        <p>Land on platforms and climb forever.</p>
+        <button id="startBtn" type="button">Start</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
